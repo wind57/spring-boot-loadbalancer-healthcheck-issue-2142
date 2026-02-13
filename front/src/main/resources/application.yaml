@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: frontend
+  cloud:
+    loadbalancer:
+      health-check:
+        path:
+          backend-service: /healthcheck
+      configurations: health-check
