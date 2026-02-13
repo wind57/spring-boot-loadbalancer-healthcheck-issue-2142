@@ -49,7 +49,7 @@ kubectl port-forward deployment/front-deployment 8080:8080
 curl http://localhost:8080/
 ```
 
-**Actual result with Spring Boot 4**: Request fails / times out
+**Actual result with Spring Boot 4**: Request fails / times out<br/>
 **Expected result with Spring Boot 4**: Returns `DONE` from backend
 
 ### Test with Spring Boot 3 (working version)
