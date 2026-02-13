@@ -26,16 +26,16 @@ I have observed that:
 
 ## Prerequisites
 
-- docker
+- java 25
 - minikube
-- kubectl (optional)
+- minikube driver (https://minikube.sigs.k8s.io/docs/drivers/)
 
 ## Quick start
 
 ### Prepare environment
 
 ```bash
-alias kubectl="minikube kubectl --" # optional
+command -v kubectl >/dev/null 2>&1 || alias kubectl="minikube kubectl --"
 ```
 
 ### Reproduce the Issue with Spring Boot 4 (default)
